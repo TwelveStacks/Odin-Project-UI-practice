@@ -9,13 +9,21 @@
 <body>
     <div class="navbar-container">
         <ul>
-            <li>Home</li>
-            <li>News</li>
-            <li>Contact</li>
-            <li>About</li>
+            <li>HOME</li>
+            <li>NEWS</li>
+            <li>CONTACT</li>
+            <li>ABOUT</li>
         </ul>
-        <div class="dropdown-container">
-            <img src="images/drop-down-icon.svg" alt="drop-down-icon" id="dropdown-button">
+        <div class="dropdown-container"data-dropdown>
+            <button id="dropdown-button" data-dropdown-button>
+                <img src="images/drop-down-icon.svg" alt="drop-down-icon">
+            </button>
+            <div class="dropdown-menu">
+                <a href="#">Link 1</a>
+                <a href="#">Link 2</a>
+                <a href="#">Link 3</a>
+                <a href="#">Link 4</a>
+            </div>
         </div>
     </div>
 </body>

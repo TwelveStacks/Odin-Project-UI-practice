@@ -150,6 +150,8 @@ table {
 .navbar-container li {
     color: white;
     padding: 30px;
+    font-weight: bold;
+    font-size: 20px;
 }
 
 .navbar-container li:hover {
@@ -163,14 +165,58 @@ table {
     padding-left: 1rem;
     padding-right: 1rem;
     background-color: black;
+    position: relative;
 }
 
 .dropdown-container:hover {
+    background-color: rgb(79, 198, 79)
+}
+
+.dropdown-container.active {
     background-color: rgb(79, 198, 79);
 }
 
 #dropdown-button {
+    display: flex;
+    background-color: black;
+    background: none;
+    color: inherit;
+    border: none;
+    padding: 0.5rem;
+    font: inherit;
+    cursor: pointer;
+    outline: inherit;
+}
+
+#dropdown-button img {
     height: 40px;
     width: 40px;
     filter: invert(100%) sepia(100%) saturate(1%) hue-rotate(281deg) brightness(110%) contrast(101%);
+}
+
+.dropdown-menu {
+    display: flex;
+    position: absolute;
+    right: 0;
+    top: calc(100% + .25rem);
+    background-color: white;
+    padding: 1rem;
+    border-radius: .25rem;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, .1);
+    opacity: 0;
+    pointer-events: none;
+    transform: translateY(-10px);
+    transition: opacity 150ms ease-in-out, transform 150ms ease-in-out;
+}
+
+dropdown-menu.active {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.dropdown-menu a {
+    font-size: 2rem;
+    color: black;
+    text-decoration: none;
+    display: block;
 }
