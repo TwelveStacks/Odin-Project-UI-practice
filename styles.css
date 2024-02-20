@@ -174,7 +174,7 @@ table {
     background-color: rgb(79, 198, 79)
 }
 
-.dropdown-button.active {
+.dropdown-button:focus {
     background-color: rgb(79, 198, 79);
 }
 
@@ -208,7 +208,7 @@ table {
     transition: opacity 150ms ease-in-out, transform 150ms ease-in-out;
 }
 
-.dropdown-menu.active {
+.dropdown-button:focus+.dropdown-menu {
     opacity: 1;
     pointer-events: auto;
 }
